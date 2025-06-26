@@ -158,68 +158,6 @@ uv run pytest
 uv run pytest --cov=src
 ```
 
-### Development Server
-
-```bash
-# Run with auto-reload (development)
-uv run python src/main.py
-```
-
-## 🐳 Docker Support
-
-The template includes Docker configuration for containerized deployment:
-
-```bash
-# Build image
-docker build -t your-project-name .
-
-# Run container
-docker run -p 8000:8000 your-project-name
-```
-
-## 📝 Configuration
-
-### Environment Variables (`.env`)
-
-```bash
-# LLM Configuration
-OPENAI_API_KEY=your_openai_api_key_here
-ANTHROPIC_API_KEY=your_anthropic_api_key_here
-
-# Application Settings
-LOG_LEVEL=INFO
-ENVIRONMENT=development
-```
-
-### Application Configuration (`configs/config.yaml`)
-
-```yaml
-# Agent behavior settings
-# Tool configurations
-# Memory settings
-# Logging levels and formats
-```
-
-## 🧪 Example Usage
-
-After generating your project, you can start building your GenAI application:
-
-```python
-# src/agents/assistant_agent.py
-from langchain.agents import AgentExecutor
-from langchain.tools import Tool
-
-class AssistantAgent:
-    def __init__(self, config: dict):
-        self.tools = self._load_tools()
-        self.memory = self._setup_memory()
-        self.agent = self._create_agent()
-    
-    async def process_message(self, message: str) -> str:
-        response = await self.agent.ainvoke({"input": message})
-        return response["output"]
-```
-
 ## 🤝 Contributing
 
 1. Fork the repository
