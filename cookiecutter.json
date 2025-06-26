@@ -1,0 +1,14 @@
+{
+    "project_name": "my-genai-project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
+    "description": "A GenAI project built with LangChain and modern Python tools",
+    "repo_name": "{{ cookiecutter.project_slug }}",
+    "author_name": "Suraj Airi",
+    "author_email": "surajairi.ml@gmail.com",
+    "version": "0.0.1",
+    "year": "{% now 'utc', '%Y' %}",
+    "license": [
+        "MIT license"
+    ],
+    "python_version": "3.12"
+}
