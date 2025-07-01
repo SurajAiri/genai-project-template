@@ -23,7 +23,7 @@ This project implements a comprehensive GenAI application using modern AI orches
 ├── docs/                   # Project documentation
 │   └── architecture.md    # This architecture document
 │
-├── src/                    # Main source code directory
+├── src/{{cookiecutter.module_name}}/                    # Main source code directory
 │   ├── __init__.py
 │   ├── main.py            # Application entry point
 │   │
@@ -57,7 +57,7 @@ This project implements a comprehensive GenAI application using modern AI orches
 
 ## Core Components
 
-### 1. Agents (`src/agents/`)
+### 1. [Agents](../src/{{cookiecutter.module_name}}/agents/)
 
 The agents directory contains the core AI agent implementations that orchestrate the application's intelligence.
 
@@ -69,7 +69,7 @@ The agents directory contains the core AI agent implementations that orchestrate
 
 **Example Structure:**
 ```python
-# src/agents/assistant_agent.py
+# src/{{cookiecutter.module_name}}/agents/assistant_agent.py
 class AssistantAgent:
     """Main conversational agent with workflow orchestration"""
     def __init__(self, config: dict):
@@ -82,7 +82,7 @@ class AssistantAgent:
         pass
 ```
 
-### 2. Tools (`src/tools/`)
+### 2. [Tools](../src/{{cookiecutter.module_name}}/tools/)
 
 Custom tools that extend agent capabilities with specific functionalities.
 
@@ -98,7 +98,7 @@ Custom tools that extend agent capabilities with specific functionalities.
 - API integration tools for external services
 - File processing tools for document handling
 
-### 3. Chains (`src/chains/`)
+### 3. [Chains](../src/{{cookiecutter.module_name}}/chains/)
 
 Processing chains for specific task sequences and workflows.
 
@@ -114,7 +114,7 @@ Processing chains for specific task sequences and workflows.
 - Multi-step reasoning chains
 - Content generation workflows
 
-### 4. Memory (`src/memory/`)
+### 4. [Memory](../src/{{cookiecutter.module_name}}/memory/)
 
 Handles conversation history, context management, and persistent storage.
 
@@ -130,7 +130,7 @@ Handles conversation history, context management, and persistent storage.
 - Vector databases (Chroma, Pinecone)
 - Cloud storage solutions
 
-### 5. Prompts (`src/prompts/`)
+### 5. [Prompts](../src/{{cookiecutter.module_name}}/prompts/)
 
 Centralized prompt template management for consistent AI interactions.
 
@@ -140,7 +140,7 @@ Centralized prompt template management for consistent AI interactions.
 - **Easy Maintenance**: Modify prompts without code changes
 - **Consistency**: Ensure consistent AI behavior across the application
 
-### 6. Utils (`src/utils/`)
+### 6. [Utils](../src/{{cookiecutter.module_name}}/utils)
 
 Common utilities and helper functions used throughout the application.
 
@@ -247,7 +247,7 @@ The architecture is designed for easy extension:
 1. **Setup Environment**: Configure `.env` file with necessary API keys
 2. **Install Dependencies**: Use `uv` to install project dependencies
 3. **Configure Application**: Modify `configs/config.yaml` as needed
-4. **Run Application**: Execute `python src/main.py` to start the application
+4. **Run Application**: Execute `python {{cookiecutter.module_name}}` to start the application
 5. **Run Tests**: Execute test suite to validate functionality
 
 This architecture provides a solid foundation for building scalable, maintainable GenAI applications while maintaining flexibility for future enhancements and modifications.

@@ -88,7 +88,7 @@ uv sync
 ### 6. Run your application
 
 ```bash
-uv run python src/main.py
+uv run python {{cookiecutter.module_name}}
 ```
 
 ## 📖 Architecture Overview
@@ -97,12 +97,12 @@ The generated project follows a modular architecture designed for GenAI applicat
 
 ### Core Components
 
-- **Agents** (`src/agents/`): AI agents that orchestrate conversations and workflows
-- **Chains** (`src/chains/`): Sequential processing pipelines for specific tasks
-- **Tools** (`src/tools/`): External integrations and custom functionality
-- **Memory** (`src/memory/`): Conversation history and context management
-- **Prompts** (`src/prompts/`): Centralized prompt template management
-- **Utils** (`src/utils/`): Common utilities and helper functions
+- [**Agents**]({{cookiecutter.project_slug}}/src/{{cookiecutter.module_name}}/agents/): AI agents that orchestrate conversations and workflows
+- [**Chains**]({{cookiecutter.project_slug}}/src/{{cookiecutter.module_name}}/chains/): Sequential processing pipelines for specific tasks
+- [**Tools**]({{cookiecutter.project_slug}}/src/{{cookiecutter.module_name}}/tools/): External integrations and custom functionality
+- [**Memory**]({{cookiecutter.project_slug}}/src/{{cookiecutter.module_name}}/memory/): Conversation history and context management
+- [**Prompts**]({{cookiecutter.project_slug}}/src/{{cookiecutter.module_name}}/prompts/): Centralized prompt template management
+- [**Utils**]({{cookiecutter.project_slug}}/src/{{cookiecutter.module_name}}/utils/): Common utilities and helper functions
 
 ### Key Features
 
