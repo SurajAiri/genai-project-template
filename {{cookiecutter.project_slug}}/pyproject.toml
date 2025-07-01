@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "{{ cookiecutter.project_slug }}"
 version = "{{ cookiecutter.version }}"
@@ -9,3 +13,16 @@ authors = [
 license = { text = "{{ cookiecutter.license }}" }
 requires-python = ">={{ cookiecutter.python_version }}"
 dependencies = []
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.1",
+]
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+

@@ -91,25 +91,6 @@ uv sync
 uv run python src/main.py
 ```
 
-## 🧩 Template Configuration
-
-The template is configured through [`cookiecutter.json`](cookiecutter.json):
-
-```json
-{
-    "project_name": "my-genai-project",
-    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
-    "description": "A GenAI project built with LangChain and modern Python tools",
-    "repo_name": "{{ cookiecutter.project_slug }}",
-    "author_name": "Your Name",
-    "author_email": "your.email@example.com",
-    "version": "0.0.1",
-    "year": "{% now 'utc', '%Y' %}",
-    "license": ["MIT license"],
-    "python_version": "3.12"
-}
-```
-
 ## 📖 Architecture Overview
 
 The generated project follows a modular architecture designed for GenAI applications:
@@ -131,7 +112,7 @@ The generated project follows a modular architecture designed for GenAI applicat
 - **Testing**: pytest-based testing with async support
 - **Code Quality**: Automated formatting and linting with ruff
 
-For detailed architecture information, see the generated [`docs/architecture.md`]({{cookiecutter.repo_name}}/docs/architecture.md).
+For detailed architecture information, see the generated [`docs/architecture.md`]({{cookiecutter.project_slug}}/docs/architecture.md).
 
 ## 🔧 Development Tools
 

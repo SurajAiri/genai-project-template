@@ -7,7 +7,7 @@ This project implements a comprehensive GenAI application using modern AI orches
 ## Project Structure
 
 ```
-{{cookiecutter.repo_name}}/
+{{cookiecutter.project_slug}}/
 │
 ├── .gitignore                  # Git ignore patterns
 ├── .env.example               # Environment variables template
