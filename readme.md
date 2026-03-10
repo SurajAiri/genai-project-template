@@ -36,6 +36,7 @@ your-project/
 │   └── utils/            # Utility functions
 ├── scripts/              # Automation scripts
 ├── tests/               # Test suite
+├── playground/           # code playground
 └── logs/                # Application logs
 ```
 
@@ -62,6 +63,7 @@ cookiecutter https://github.com/your-username/genai-project-template.git
 ### 3. Configure your project
 
 You'll be prompted to provide:
+
 - `project_name`: Your project name (e.g., "My GenAI Assistant")
 - `project_slug`: URL-friendly version (auto-generated)
 - `description`: Brief project description
