@@ -199,3 +199,26 @@ cython_debug/
 .DS_Store
 */.DS_Store
 
+# artifacts
+artifacts/
+artifact/
+
+# large files
+*.zip
+*.tar.gz
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.iso
+*.exe
+*.dll
+*.bin
+*.log
+*.csv
+*.xlsx
+*.pdf
+*.docx
+*.pptx
+*.mp3
+*.wav
