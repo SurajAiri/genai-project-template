@@ -29,11 +29,11 @@ exclude = [
 ]
 
 # Same as Black.
-line-length = 88
+line-length = 110
 indent-width = 4
 
-# Assume Python 3.9
-target-version = "py39"
+# Assume Python 3.10
+target-version = "py310"
 
 [lint]
 # Enable Pyflakes (`F`) and a subset of the pycodestyle (`E`) codes by default.
@@ -44,7 +44,7 @@ extend-select = ["E501", "N", "R", "I"]
 ignore = ["F401"]
 
 # Ignore line length for files in src/prompts directory
-per-file-ignores = { "src/*/prompts/*" = ["E501"] }
+per-file-ignores = { "src/*/prompts/*" = ["E501"], "playground/*" = ["E501"] }
 
 # Allow fix for all enabled rules (when `--fix`) is provided.
 fixable = ["ALL"]
